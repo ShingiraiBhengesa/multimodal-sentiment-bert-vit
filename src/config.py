@@ -1,0 +1,13 @@
+BERT_MODEL = "bert-base-uncased"
+VIT_MODEL  = "google/vit-base-patch16-224"
+MAX_LEN    = 160
+BATCH_SIZE = 16
+LR_TEXT    = 2e-5
+LR_IMAGE   = 2e-5
+LR_FUSION  = 1e-4
+EPOCHS_SINGLE = 2
+EPOCHS_FUSION = 3
+DATA_DIR   = "data"
+TEXT_CKPT  = "checkpoints/text_encoder"
+IMAGE_CKPT = "checkpoints/image_encoder"
+FUSION_CKPT= "checkpoints/fusion_head.pth"
